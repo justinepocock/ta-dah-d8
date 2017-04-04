@@ -1,9 +1,7 @@
-name: Ta_dah
+name: Ta-dah
 type: theme
 description: 'A clean theme that makes you say Ta-Dah!'
 core: 8.x
-libraries:
-  - ta_dah/global-styling
 regions:
   header: Header
   content: Content
