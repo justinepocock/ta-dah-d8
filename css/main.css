@@ -1,0 +1,22 @@
+/*@import 'vendor/normalize';*/
+@font-face {
+  font-family: "et-book";
+  src: url("fonts/et-book-roman-line-figures.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("fonts/et-book-roman-line-figures.woff") format("woff"), url("fonts/et-book-roman-line-figures.ttf") format("truetype"), url("fonts/et-book-roman-line-figures.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+/* line 2, ../sass/atoms/_test.scss */
+html {
+  font-size: 20px;
+  font-family: et-book, Arial, sans-serif;
+  color: #302e2f;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*@import 'molecules/cookie-notice';*/
+/*@import 'organisms/discourse';*/
+/*@import 'templates/page';*/
+
+/*# sourceMappingURL=main.css.map */

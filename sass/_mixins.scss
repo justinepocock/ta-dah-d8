@@ -1,0 +1,12 @@
+
+@mixin webfont($fontname, $filestub, $weight:normal, $style:normal) {
+    @font-face {
+        font-family: '#{$fontname}';
+        src: url('fonts/#{$filestub}.eot'); /* IE9 Compat Modes */
+        src: url('fonts/#{$filestub}.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+             url('fonts/#{$filestub}.woff') format('woff'), /* Pretty Modern Browsers */
+             url('fonts/#{$filestub}.ttf')  format('truetype'), /* Safari, Android, iOS */
+             url('fonts/#{$filestub}.svg#svgFontName') format('svg'); /* Legacy iOS */
+
+    }
+}

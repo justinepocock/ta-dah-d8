@@ -1,10 +1,19 @@
 name: Ta-dah
 type: theme
 description: 'A clean theme that makes you say Ta-Dah!'
+package: By Justine
+version: 1.x
 core: 8.x
+
+base theme: stable
+
+libraries:
+  - ta_dah/global-styling
+
+libraries-override:
+  core/html5shiv: false
+
 regions:
   header: Header
   content: Content
   footer: Footer
-stylesheets-remove:
-  - core/assets/vendor/normalize-css/normalize.css

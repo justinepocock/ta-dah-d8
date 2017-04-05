@@ -1,0 +1,21 @@
+$color-base: #302e2f;
+$color-white: #fff;
+
+$font-base: et-book, Arial, sans-serif;
+
+$transition-speed: 0.2s;
+
+// Core media queries. The names of these breakpoints are referenced in other
+// maps below. Note that other maps refer to a "default" which is implicit, and
+// not declared in the $breakpoints map itself
+$breakpoints: (
+        'mobile-medium': (min-width: 360px),
+        'below-mobile-large': (max-width: 620px), // Convenience shortcut
+        'mobile-large': (min-width: 620px),
+        'below-tablet': (max-width: 768px), // Convenience shortcut
+        'tablet-portrait': (min-width: 768px),
+        'below-desktop': (max-width: 1024px), // Convenience shortcut
+        'desktop': (min-width: 1024px),
+        'desktop-large': (min-width: 1300px),
+        'desktop-huge': (min-width: 1600px)
+);
