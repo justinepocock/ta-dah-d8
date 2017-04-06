@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAGA,+BAA+B;ACD3B,UAQC;EAPG,WAAW,EAAE,SAAc;EAC3B,GAAG,EAAE,2CAA6B;EAAE,sBAAsB;EAC1D,GAAG,EAAE,kRAGuD;EAAE,gBAAgB;;;ACPtF,IAAK;EACH,SAAS,EAAE,IAAI;EACf,WAAW,ECAD,0BAA0B;EDCpC,KAAK,ECJM,OAAO;EDKlB,sBAAsB,EAAE,WAAW;EACnC,uBAAuB,EAAE,SAAS;;;AFGpC,sCAAsC;AAEtC,kCAAkC;AAGlC,6BAA6B",
-"sources": ["../sass/main.scss","../sass/_mixins.scss","../sass/atoms/_test.scss","../sass/_variables.scss"],
+"mappings": "AAGA,+BAA+B;ACD3B,UAQC;EAPG,WAAW,EAAE,SAAc;EAC3B,GAAG,EAAE,2CAA6B;EAAE,sBAAsB;EAC1D,GAAG,EAAE,kRAGuD;EAAE,gBAAgB;;AANlF,UAQC;EAPG,WAAW,EAAE,SAAc;EAC3B,GAAG,EAAE,yDAA6B;EAAE,sBAAsB;EAC1D,GAAG,EAAE,0UAGuD;EAAE,gBAAgB;;AANlF,UAQC;EAPG,WAAW,EAAE,SAAc;EAC3B,GAAG,EAAE,0CAA6B;EAAE,sBAAsB;EAC1D,GAAG,EAAE,8QAGuD;EAAE,gBAAgB;;;ACPtF,IAAK;EACH,WAAW,ECCD,uBAAuB;EDAjC,KAAK,ECHM,OAAO;EDIlB,sBAAsB,EAAE,WAAW;EACnC,uBAAuB,EAAE,SAAS;;;;AELpC,EAAG;EACD,SAAS,EAAE,IAAI;;;AJQjB,sCAAsC;AAEtC,kCAAkC;AAGlC,6BAA6B",
+"sources": ["../sass/main.scss","../sass/_mixins.scss","../sass/core/_layout.scss","../sass/_variables.scss","../sass/core/_typography.scss"],
 "names": [],
 "file": "main.css"
 }

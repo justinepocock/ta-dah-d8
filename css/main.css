@@ -6,13 +6,31 @@
   src: url("fonts/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("fonts/et-book-roman-line-figures.woff") format("woff"), url("fonts/et-book-roman-line-figures.ttf") format("truetype"), url("fonts/et-book-roman-line-figures.svg#svgFontName") format("svg");
   /* Legacy iOS */
 }
-/* line 2, ../sass/atoms/_test.scss */
+@font-face {
+  font-family: "et-book";
+  src: url("fonts/et-book-display-italic-old-style-figures.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), url("fonts/et-book-display-italic-old-style-figures.woff") format("woff"), url("fonts/et-book-display-italic-old-style-figures.ttf") format("truetype"), url("fonts/et-book-display-italic-old-style-figures.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: "et-book";
+  src: url("fonts/et-book-bold-line-figures.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), url("fonts/et-book-bold-line-figures.woff") format("woff"), url("fonts/et-book-bold-line-figures.ttf") format("truetype"), url("fonts/et-book-bold-line-figures.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+/* line 2, ../sass/core/_layout.scss */
 html {
-  font-size: 20px;
-  font-family: et-book, Arial, sans-serif;
-  color: #302e2f;
+  font-family: et-book, Georgia, serif;
+  color: #454d39;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 1, ../sass/core/_typography.scss */
+h1 {
+  font-size: 45px;
 }
 
 /*@import 'molecules/cookie-notice';*/

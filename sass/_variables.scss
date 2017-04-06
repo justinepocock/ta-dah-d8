@@ -1,7 +1,9 @@
-$color-base: #302e2f;
+$color-base: #454d39; // dark grey
 $color-white: #fff;
 
-$font-base: et-book, Arial, sans-serif;
+$font-base: et-book, Georgia, serif;
+
+$font-sans-serif: 'Open Sans', sans-serif;
 
 $transition-speed: 0.2s;
 
@@ -19,3 +21,4 @@ $breakpoints: (
         'desktop-large': (min-width: 1300px),
         'desktop-huge': (min-width: 1600px)
 );
+
