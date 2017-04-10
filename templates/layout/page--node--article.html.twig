@@ -46,9 +46,14 @@
 <header role="banner">
   {{ page.header }}
   <div{{ author_attributes }}>
-    {% trans %}Published on {{ node.date }}{% endtrans %}
+    {% trans %}Published on {{ date }}{% endtrans %}
   </div>
 </header>
+<ol>
+  {% for key, value in node  %}
+    <li>{{ key }}</li>
+  {% endfor %}
+</ol>
 
 {{ page.primary_menu }}
 {{ page.secondary_menu }}

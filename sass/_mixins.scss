@@ -10,3 +10,13 @@
 
     }
 }
+
+@mixin linkHover($color) {
+  color: $color;
+  &:active,
+  &:hover,
+  &:focus {
+    background-color: $color;
+    color: $color-white;
+  }
+}

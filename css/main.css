@@ -20,17 +20,63 @@
   src: url("fonts/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), url("fonts/et-book-bold-line-figures.woff") format("woff"), url("fonts/et-book-bold-line-figures.ttf") format("truetype"), url("fonts/et-book-bold-line-figures.svg#svgFontName") format("svg");
   /* Legacy iOS */
 }
-/* line 2, ../sass/core/_layout.scss */
+/* line 1, ../sass/core/_layout.scss */
 html {
   font-family: et-book, Georgia, serif;
   color: #454d39;
+  font-size: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 /* line 1, ../sass/core/_typography.scss */
 h1 {
-  font-size: 45px;
+  font-size: 65px;
+}
+
+/* line 5, ../sass/core/_typography.scss */
+article a {
+  padding: 0 5px;
+  font-weight: bold;
+  color: #82d0d0;
+}
+/* line 16, ../sass/_mixins.scss */
+article a:active, article a:hover, article a:focus {
+  background-color: #82d0d0;
+  color: #fff;
+}
+
+/* line 11, ../sass/core/_typography.scss */
+h2 a {
+  text-decoration: none;
+}
+
+/* line 17, ../sass/core/_typography.scss */
+.tags h2 {
+  display: inline;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+/* line 22, ../sass/core/_typography.scss */
+.tags ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+/* line 27, ../sass/core/_typography.scss */
+.tags li {
+  display: inline;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+/* line 32, ../sass/core/_typography.scss */
+.tags a {
+  color: #fc8977;
+}
+/* line 16, ../sass/_mixins.scss */
+.tags a:active, .tags a:hover, .tags a:focus {
+  background-color: #fc8977;
+  color: #fff;
 }
 
 /*@import 'molecules/cookie-notice';*/

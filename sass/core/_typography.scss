@@ -1,3 +1,35 @@
 h1 {
-  font-size: 45px;
+  font-size: 65px;
+}
+
+article a {
+  padding: 0 5px;
+  font-weight: bold;
+  @include linkHover($color-mint)
+}
+
+h2 a {
+  text-decoration: none;
+}
+
+// lists -- component
+.tags {
+  h2 {
+    display: inline;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  a {
+    @include linkHover($color-coral)
+  }
 }
