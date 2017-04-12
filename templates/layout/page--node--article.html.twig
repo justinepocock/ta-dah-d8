@@ -43,38 +43,40 @@
  * @see html.html.twig
  */
 #}
-<header role="banner">
-  {{ page.header }}
-  <div{{ author_attributes }}>
-    {% trans %}Published on {{ date }}{% endtrans %}
-  </div>
-</header>
-<ol>
-  {% for key, value in node  %}
-    <li>{{ key }}</li>
-  {% endfor %}
-</ol>
+<div class="page-layout">
+  <header role="banner" class="article--banner">
+    {{ page.header }}
+    {# TODO: make h1 into a tpl of itself. This is the site name preceeded by content type name#}
+    <h1 class="article--heading"><span class="bold">Blog</span> <span class="serif">by</span> Justine</h1>
 
-{{ page.primary_menu }}
-{{ page.secondary_menu }}
+    <div class="article--date meta-info">
+      {% set createdDate = node.getCreatedTime|date('jS F Y') %}
+      {# TODO: Set as a date format? #}
+      {% trans %} {{ createdDate }} {% endtrans %}
+    </div>
+  </header>
 
-{{ page.highlighted }}
+  {{ page.primary_menu }}
+  {{ page.secondary_menu }}
 
-{{ page.help }}
+  {{ page.highlighted }}
 
-<main role="main">
-  <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+  {{ page.help }}
 
-  <div class="layout-content">
-    {{ page.content }}
-  </div>{# /.layout-content #}
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-</main>
+    <div class="layout-content">
+      {{ page.content }}
+    </div>{# /.layout-content #}
 
-{% if page.footer %}
+  </main>
 
-    {{ page.breadcrumb }}
-  <footer role="contentinfo">
-    {{ page.footer }}
-  </footer>
-{% endif %}
+  {% if page.footer %}
+
+      {{ page.breadcrumb }}
+    <footer role="contentinfo">
+      {{ page.footer }}
+    </footer>
+  {% endif %}
+</div>

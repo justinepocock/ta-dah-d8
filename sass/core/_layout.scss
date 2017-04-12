@@ -4,4 +4,16 @@ html {
   font-size: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: $color-mint;
+}
+
+body {
+  margin: 0;
+}
+
+.page-layout {
+  width: 60%;
+  margin: 0 auto;
+  padding: 0 24px;
+  background-color: white;
 }

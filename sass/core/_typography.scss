@@ -1,35 +1,49 @@
+
+// todo: might change the content type name color for each... if so use the classes i.e article--heading
+header h1 {
+  font-family: $font-sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  margin: 0;
+  .serif {
+    font-family: $font-base;
+    font-style: italic;
+    color: $color-mint;
+    text-transform: lowercase;
+  }
+  .bold {
+    font-weight: 800;
+  }
+}
+
+
+
+.rich-text a, //TODO: currently only used on blocks this could change/move for something more block-like
+article a {
+  padding: 0 5px;
+  font-weight: bold;
+  text-decoration: none;
+  @include linkHover($color-red);
+}
+
 h1 {
   font-size: 65px;
 }
 
-article a {
-  padding: 0 5px;
-  font-weight: bold;
+h2 a {
+  text-decoration: none;
   @include linkHover($color-mint)
 }
 
-h2 a {
-  text-decoration: none;
+.meta-info {
+  font-family: $font-sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
-// lists -- component
-.tags {
-  h2 {
-    display: inline;
-    font-size: 15px;
-    text-transform: uppercase;
-  }
-  ul {
-    display: inline;
-    margin: 0;
-    padding: 0;
-  }
-  li {
-    display: inline;
-    font-size: 15px;
-    text-transform: uppercase;
-  }
-  a {
-    @include linkHover($color-coral)
-  }
+.comment-form {
+  font-family: $font-sans-serif;
+  font-size: 14px;
 }

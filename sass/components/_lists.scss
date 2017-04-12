@@ -1,0 +1,42 @@
+// lists -- not main menus but other kinds of lists.
+.tags {
+  h2 {
+    display: inline;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  a {
+    @include linkHover($color-coral);
+  }
+}
+
+.pager a {
+  @include linkHover($color-coral);
+}
+
+.primary--tabs {
+  margin: 0;
+  padding: 0;
+  li {
+    display: inline;
+    a {
+      @include linkHover($color-coral);
+      font-family: $font-sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      border: 1px solid $color-coral;
+      padding: 5px 10px;
+
+    }
+  }
+}

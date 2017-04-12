@@ -27,49 +27,118 @@ html {
   font-size: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #82d0d0;
 }
 
-/* line 1, ../sass/core/_typography.scss */
+/* line 10, ../sass/core/_layout.scss */
+body {
+  margin: 0;
+}
+
+/* line 14, ../sass/core/_layout.scss */
+.page-layout {
+  width: 60%;
+  margin: 0 auto;
+  padding: 0 24px;
+  background-color: white;
+}
+
+/* line 3, ../sass/core/_typography.scss */
+header h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  margin: 0;
+}
+/* line 10, ../sass/core/_typography.scss */
+header h1 .serif {
+  font-family: et-book, Georgia, serif;
+  font-style: italic;
+  color: #82d0d0;
+  text-transform: lowercase;
+}
+/* line 16, ../sass/core/_typography.scss */
+header h1 .bold {
+  font-weight: 800;
+}
+
+/* line 23, ../sass/core/_typography.scss */
+.rich-text a,
+article a {
+  padding: 0 5px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #DC143C;
+}
+/* line 16, ../sass/_mixins.scss */
+.rich-text a:active, .rich-text a:hover, .rich-text a:focus,
+article a:active,
+article a:hover,
+article a:focus {
+  background-color: #DC143C;
+  color: #fff;
+}
+
+/* line 31, ../sass/core/_typography.scss */
 h1 {
   font-size: 65px;
 }
 
-/* line 5, ../sass/core/_typography.scss */
-article a {
-  padding: 0 5px;
-  font-weight: bold;
+/* line 35, ../sass/core/_typography.scss */
+h2 a {
+  text-decoration: none;
   color: #82d0d0;
 }
 /* line 16, ../sass/_mixins.scss */
-article a:active, article a:hover, article a:focus {
+h2 a:active, h2 a:hover, h2 a:focus {
   background-color: #82d0d0;
   color: #fff;
 }
 
-/* line 11, ../sass/core/_typography.scss */
-h2 a {
-  text-decoration: none;
+/* line 40, ../sass/core/_typography.scss */
+.meta-info {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
-/* line 17, ../sass/core/_typography.scss */
+/* line 46, ../sass/core/_typography.scss */
+.comment-form {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+/* line 1, ../sass/atoms/_rss-feed.scss */
+.feed-icon {
+  color: #fc8977;
+}
+/* line 16, ../sass/_mixins.scss */
+.feed-icon:active, .feed-icon:hover, .feed-icon:focus {
+  background-color: #fc8977;
+  color: #fff;
+}
+
+/* line 3, ../sass/components/_lists.scss */
 .tags h2 {
   display: inline;
   font-size: 15px;
   text-transform: uppercase;
 }
-/* line 22, ../sass/core/_typography.scss */
+/* line 8, ../sass/components/_lists.scss */
 .tags ul {
   display: inline;
   margin: 0;
   padding: 0;
 }
-/* line 27, ../sass/core/_typography.scss */
+/* line 13, ../sass/components/_lists.scss */
 .tags li {
   display: inline;
   font-size: 15px;
   text-transform: uppercase;
 }
-/* line 32, ../sass/core/_typography.scss */
+/* line 18, ../sass/components/_lists.scss */
 .tags a {
   color: #fc8977;
 }
@@ -77,6 +146,52 @@ h2 a {
 .tags a:active, .tags a:hover, .tags a:focus {
   background-color: #fc8977;
   color: #fff;
+}
+
+/* line 23, ../sass/components/_lists.scss */
+.pager a {
+  color: #fc8977;
+}
+/* line 16, ../sass/_mixins.scss */
+.pager a:active, .pager a:hover, .pager a:focus {
+  background-color: #fc8977;
+  color: #fff;
+}
+
+/* line 27, ../sass/components/_lists.scss */
+.primary--tabs {
+  margin: 0;
+  padding: 0;
+}
+/* line 30, ../sass/components/_lists.scss */
+.primary--tabs li {
+  display: inline;
+}
+/* line 32, ../sass/components/_lists.scss */
+.primary--tabs li a {
+  color: #fc8977;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  border: 1px solid #fc8977;
+  padding: 5px 10px;
+}
+/* line 16, ../sass/_mixins.scss */
+.primary--tabs li a:active, .primary--tabs li a:hover, .primary--tabs li a:focus {
+  background-color: #fc8977;
+  color: #fff;
+}
+
+/* line 1, ../sass/components/_header.scss */
+header {
+  border-bottom: 5px solid #82d0d0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+/* line 6, ../sass/components/_header.scss */
+header .article--date {
+  margin-bottom: 5px;
 }
 
 /*@import 'molecules/cookie-notice';*/
